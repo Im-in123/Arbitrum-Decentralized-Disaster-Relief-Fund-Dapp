@@ -25,7 +25,7 @@ export const fetchExecutedProposals = async (start: number, count: number): Prom
     }) as [ProposalResponse[], bigint];
 
     // Filter out proposals with id <= 0
-    const filteredProposals = proposals.filter(proposal => proposal.id > 0);
+    const filteredProposals = proposals.filter(proposal => proposal.id > 0 && !proposal.archived);
 
     console.log("Filtered proposals:", filteredProposals);
 
