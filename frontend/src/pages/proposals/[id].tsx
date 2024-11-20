@@ -340,7 +340,8 @@ const ProposalDetail: React.FC = () => {
         <VoteButtons proposal={proposal} handleVote={handleVote}  />  
 
         {voteError && <p className="error">{voteError}</p>}
-        <ShareProposal proposalId={id as string} />
+        {!proposal.archived &&    <ShareProposal proposalId={id as string} />}
+     
         <WidthdrawProposalFunds proposal={proposal}
           ethToUsdRate={ethToUsdRate}
           allocateFundsToProposer={allocateFundsToProposer} />
