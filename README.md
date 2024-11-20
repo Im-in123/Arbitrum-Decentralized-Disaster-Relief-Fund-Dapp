@@ -75,8 +75,8 @@ This dApp provides decentralized financial management of disaster relief funds, 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Im-in123/Ecommerce-with-Advanced-Redux-Toolkit-State-Management
-cd Ecommerce-with-Advanced-Redux-Toolkit-State-Management
+git clone https://github.com/Im-in123/Arbitrum-Decentralized-Disaster-Relief-Fund-Dapp
+cd Arbitrum-Decentralized-Disaster-Relief-Fund-Dapp
 pushd frontend
 rm -rf .git
 corepack enable
@@ -105,7 +105,7 @@ git commit -m 'changes'
 git push -u origin main
 ```
 ### Build, Test and  Deploy Smart Contract
-1. Build and test the project
+1. Build and test the project. Make sure you setup foundry from the steps above if you did not before continuing.
 ```bash
 cd backend
 forge build
@@ -113,30 +113,32 @@ forge test
 ```
 2. Create a .env file and populate it with the necessary environment variables in the root of the backend folder:
 ```bash
-NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=YOUR_PROJECT_ID //Go and create a walletconnect project if you have not.
-NEXT_PUBLIC_DEPLOYED_CONTRACT_ADDRESS=YOUR_CONTRACT_ADDRESS
-NEXT_PUBLIC_ENABLE_TESTNETS=true
+# API KEY from Arbiscan
+API_KEY="your-arbiscan-api-key"
+# PRIVATE KEY from MetaMask
+PRIVATE_KEY="metamask-private-key"
 ```
 3. Source the .env file:
 ```bash
-source.env
+source .env
 ```
 4. Deploy the contract to Arbitrum Sepolia:
 ```bash
 forge create --rpc-url "arbitrumSepolia" --private-key "${PRIVATE_KEY}" --verifier-url "https://api-sepolia.arbiscan.io/api" -e "${API_KEY}" --verify src/DisasterReliefFund.sol:DisasterReliefFund
 ```
+5. If successful, copy the contract address from the terminal since we need it when setting up the frontend.
 
-### Setup Frontend
+### Frontend Setup
 1. Install the frontend dependencies and run the following commands in the terminal
 ```bash
 cd frontend
 yarn install
 yarn wagmi generate
 ```
-2.Create a new file called `.env.development.local` in the root of the frontend directory and add:
+2.Create a new file called `.env.development.local` in the root of the frontend directory and add (Replace the contract address with the one you copied from terminal when we deployed the smart contract from the steps above. Also create a wallectconnect project if you have not on their website (https://cloud.reown.com/sign-in)):
 ```bash
 NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=YOUR_PROJECT_ID  
-NEXT_PUBLIC_DEPLOYED_CONTRACT_ADDRESS=YOUR_CONTRACT_ADDRESS
+NEXT_PUBLIC_DEPLOYED_CONTRACT_ADDRESS=YOUR_CONTRACT_ADDRESS- 
 NEXT_PUBLIC_ENABLE_TESTNETS=true
 ```
 3.Start the development server:
@@ -173,3 +175,14 @@ That's it! You should now have a fully set up project with a deployed contract o
 ### My already Deployed Smart Contract Address
 Smart Contract Address: 0xF8dC5472716f560c3704f5F95d2C2F077fCA8A3e
  
+###  Vercel Hosting
+The summary of the settings is as follows before deploying
+
+Framework: NextJS
+Root directory: ./frontend
+Build command (override): yarn build
+Install command (override): yarn install
+Then in the environmental variables section, add the following and replace the values for the Project ID with your Project ID and the smart contract address with your deployed smart contract on Arbitrum Sepolia  
+NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=YOUR_PROJECT_ID
+NEXT_PUBLIC_DEPLOYED_CONTRACT_ADDRESS=YOUR_DEPLOYED_SMART_CONTRACT_ADDRESS
+NEXT_PUBLIC_ENABLE_TESTNETS=true
