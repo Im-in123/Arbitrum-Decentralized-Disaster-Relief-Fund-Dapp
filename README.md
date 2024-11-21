@@ -26,7 +26,7 @@ Traditional disaster relief processes often lack efficiency and transparency. By
 ## Live Application
 
 Check out the deployed application:  
-👉 **[Decentralized Disaster Relief Fund dApp](<URL to your deployed app>)**
+👉 **[Decentralized Disaster Relief Fund dApp](https://arbitrum-decentralized-disaster-relief-fund-dapp.vercel.app)**
 
 ---
 
@@ -40,7 +40,7 @@ Check out the deployed application:
 ## GitHub Repository
 
 The complete source code for the project is available here:  
-👉 **[GitHub Repository](<URL to your GitHub repository>)**
+👉 **[GitHub Repository](https://github.com/Im-in123/Arbitrum-Decentralized-Disaster-Relief-Fund-Dapp)**
 
 ---
 

@@ -30,12 +30,12 @@ const fetchUserProposals = async (userAddress: string, start: number, count: num
         args: [id],
       }) as ProposalDetails;
 
-      
+      userProposals.push({ ...proposal }); 
     }
 
     return {
       proposals: userProposals,
-      totalProposalCount: Number(totalProposalCount), // Convert to number for easier handling
+      totalProposalCount: Number(totalProposalCount),  
     };
   } catch (error) {
     console.error("Error fetching user proposals:", error);
