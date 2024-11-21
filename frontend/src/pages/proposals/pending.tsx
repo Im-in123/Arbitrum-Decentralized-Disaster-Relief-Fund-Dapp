@@ -17,7 +17,7 @@ const PendingProposals: React.FC = () => {
   const { isConnected } = useAccount();
 
   const [start, setStart] = useState(0); // Start index for pagination
-  const count = 2; // Number of items per page
+  const count = 4; // Number of items per page
   const [totalItems, setTotalItems] = useState(0); // Total items for pagination
   const [currentPage, setCurrentPage] = useState(0); // Track current page
 

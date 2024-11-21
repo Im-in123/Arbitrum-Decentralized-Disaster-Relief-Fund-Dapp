@@ -17,7 +17,7 @@ const UserProposals: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   const [start, setStart] = useState<number>(0); // Start index for pagination
-  const count = 2; // Number of items per page
+  const count = 4; // Number of items per page
   const [totalItems, setTotalItems] = useState<number>(0); // Total items for pagination
   const [currentPage, setCurrentPage] = useState<number>(0); // Track current page
   const [countFetchSuccessful, setCountFetchSuccessful] = useState<boolean>(false); // Track if count fetch succeeded

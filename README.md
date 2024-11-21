@@ -70,6 +70,9 @@ The complete source code for the project is available here:
 This dApp provides decentralized financial management of disaster relief funds, making it a perfect fit for the DeFi / RWAs track.  
 
 ---
+### My already Deployed Smart Contract Address
+**Smart Contract Address:** 0xF8dC5472716f560c3704f5F95d2C2F077fCA8A3e
+ 
 
 ### Installation
 ### Clone the Repository
@@ -172,9 +175,7 @@ Confirm the transactions in your wallet.
 That's it. You should now have a fully set up project with a deployed contract on Arbitrum Sepolia and automation set up using Chainlink Keepers.
 
 
-### My already Deployed Smart Contract Address
-Smart Contract Address: 0xF8dC5472716f560c3704f5F95d2C2F077fCA8A3e
- 
+
 ###  Vercel Hosting
 The summary of the settings is as follows before deploying
 
