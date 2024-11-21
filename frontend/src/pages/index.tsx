@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home-container">
             <div className="home-hero">
                 <h1 className="home-hero-title">Disaster Relief Fund</h1>
-                <p className="home-hero-subtitle">Join the fight against the devastating impacts of natural disasters. Your voice matters!</p>
+                <p className="home-hero-subtitle">Join the fight against the devastating impacts of natural disasters and humanitarian crisis. Your voice matters!</p>
                 <p className="home-hero-description">
                     Empower communities through a decentralized platform built on the Arbitrum network, enabling transparent proposals and contributions for effective disaster response.
                 </p>

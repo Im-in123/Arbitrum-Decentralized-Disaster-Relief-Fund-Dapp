@@ -169,7 +169,7 @@ Connect your wallet and select the testnet.
 Create an automation upkeep and enter the smart contract address you want to automate.
 Choose the function you want to automate and set the frequency.
 Confirm the transactions in your wallet.
-That's it! You should now have a fully set up project with a deployed contract on Arbitrum Sepolia and automation set up using Chainlink Keepers.
+That's it. You should now have a fully set up project with a deployed contract on Arbitrum Sepolia and automation set up using Chainlink Keepers.
 
 
 ### My already Deployed Smart Contract Address
