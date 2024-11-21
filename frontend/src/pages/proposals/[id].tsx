@@ -347,7 +347,7 @@ const ProposalDetail: React.FC = () => {
           allocateFundsToProposer={allocateFundsToProposer} />
 
         <Donate
-          proposal={proposal}
+          proposal={proposal} 
           donationAmountETH={donationAmountETH}
           donationAmountUSD={donationAmountUSD}
           handleEthChange={handleEthChange}

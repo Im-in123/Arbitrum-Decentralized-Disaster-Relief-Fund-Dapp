@@ -15,7 +15,7 @@ const fetchProposalById = async (id: number): Promise<ProposalResponse | null> =
     }) as ProposalDetails;
 console.log("proposalData::", proposal)
     // Return the proposal with an ID field
-    return { ...proposal, id }; // Add the ID to the returned object
+    return { ...proposal  }; // Add the ID to the returned object
  
 };
 

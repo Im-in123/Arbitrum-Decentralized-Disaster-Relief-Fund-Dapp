@@ -30,7 +30,7 @@ const fetchUserProposals = async (userAddress: string, start: number, count: num
         args: [id],
       }) as ProposalDetails;
 
-      userProposals.push({ ...proposal, id: Number(id) }); // Add an ID field
+      
     }
 
     return {

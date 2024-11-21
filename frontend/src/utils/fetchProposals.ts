@@ -23,7 +23,7 @@ const fetchProposals = async (): Promise<ProposalResponse[]> => {
         args: [i],
       }) as ProposalDetails;
 
-      proposals.push({ ...proposal, id: Number(i) }); // Adding an ID field
+     
     }
 
     return proposals;
