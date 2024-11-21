@@ -47,7 +47,7 @@ const CreateProposal: React.FC = () => {
       router.push('/proposals/userproposals');
     } catch (error) {
       console.error('Error creating proposal:', error);
-      toast.error('Error creating proposal');
+      toast.error('Error creating proposal!');
     } finally {
       setIsLoading(false);
     }
