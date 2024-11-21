@@ -44,6 +44,11 @@ The complete source code for the project is available here:
 
 ---
 
+## My Deployed Smart Contract Address
+**Smart Contract Address:** 0xF8dC5472716f560c3704f5F95d2C2F077fCA8A3e  👉 [Contract Code](https://sepolia.arbiscan.io/address/0xf8dc5472716f560c3704f5f95d2c2f077fca8a3e#code)
+
+---
+
 ## How It Works
 
 1. **Create a Proposal**: Any user can propose a disaster relief initiative by providing a title, description, and voting deadline.  
@@ -70,9 +75,7 @@ The complete source code for the project is available here:
 This dApp provides decentralized financial management of disaster relief funds, making it a perfect fit for the DeFi / RWAs track.  
 
 ---
-### My already Deployed Smart Contract Address
-**Smart Contract Address:** 0xF8dC5472716f560c3704f5F95d2C2F077fCA8A3e
- 
+
 
 ### Installation
 ### Clone the Repository
