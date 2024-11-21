@@ -13,7 +13,7 @@ interface DonateProps {
 const Donate: React.FC<DonateProps> = ({ proposal, donationAmountETH, donationAmountUSD, handleEthChange, handleUsdChange, handleDonate }) => {
   return (
     <>
-      {proposal.votingPassed && (
+      {proposal.votingPassed && !proposal.archived && (
         <div className="donate-section">
           <h3>Donate to this Proposal</h3>
           <div>
