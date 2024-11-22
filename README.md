@@ -33,7 +33,7 @@ Check out the deployed application:
 ## Video Demonstration
 
 📺 Watch a quick demo of the dApp:  
-👉 **[Video Demo]([<URL to your video demonstration>](https://youtu.be/Wn921Ag4bjY))**
+👉 **[Video Demo](https://youtu.be/Wn921Ag4bjY)**
 
 ---
 
