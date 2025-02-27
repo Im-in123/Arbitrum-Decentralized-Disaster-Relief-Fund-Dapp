@@ -32,8 +32,9 @@ Check out the deployed application:
 
 ## Video Demonstration
 
-📺 Watch a demo of the dApp:  
-👉 **[Video Demo](https://youtu.be/Wn921Ag4bjY)**
+📺 Watch a demo of the App:  **👉 (https://youtu.be/KaDVXdGDagw)**
+
+Local copy of demo video(demo.mp4) also exists at project root folder [here](Demo.mp4).
 
 ---
 
