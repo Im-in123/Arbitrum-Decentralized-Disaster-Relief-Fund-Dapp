@@ -20,6 +20,7 @@ const Header: React.FC = () => {
         onConnect(data) {
             setAccount(data.address);
             toast.success("Account connected");
+            toast.success("Make sure to switch the network to Arbitrum Sepolia at the top-right dropdown");
         },
         onDisconnect() {
             toast.error("Account Disconnected");
